@@ -1,18 +1,14 @@
 {
-  "version": 2,
   "builds": [
     {
-      "src": "./server/**",
-      "use": "@vercel/node"
+      "src": "horilla/wsgi.py",
+      "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/server/"
+      "dest": "horilla/wsgi.py"
     }
-  ],
-  "env": {
-    "DATABASE_URL": "postgres://postgres:postgres@db:5432/horilla"
-  }
+  ]
 }
