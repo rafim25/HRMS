@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "./server/**",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/server/"
+    }
+  ],
+  "env": {
+    "DATABASE_URL": "postgres://postgres:postgres@db:5432/horilla"
+  }
+}
