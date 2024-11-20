@@ -10,5 +10,28 @@
       "src": "/(.*)",
       "dest": "horilla/wsgi.py"
     }
+  ],
+  "excludes": [
+    ".git",
+    ".env",
+    "venv",
+    "tests",
+    "__pycache__",
+    "*.pyc",
+    "*.pyo",
+    "*.pyd",
+    ".Python",
+    "env",
+    "pip-log.txt",
+    "pip-delete-this-directory.txt",
+    ".tox",
+    ".coverage",
+    ".coverage.*",
+    "nosetests.xml",
+    "coverage.xml",
+    "*.cover",
+    "*.log",
+    ".pytest_cache",
+    "node_modules"
   ]
 }
